@@ -2,8 +2,14 @@
 * {
   box-sizing: border-box;
 }
+@keyframes background {
+  100% {
+    background-size: 4000px 1000px;
+  }
+}
 body {
-  background-color: #700b97;
+  /* background-color: #700b97; */
+
   color: #fff;
   font-family: "Muli", sans-serif;
   display: flex;
@@ -14,6 +20,11 @@ body {
   overflow: hidden;
   padding: 10px;
   margin: 0;
+
+  background-image: url("wave.svg");
+  background-size: 1800px 700px;
+  background-position: -500px 0;
+  animation: background 10s infinite alternate linear;
 }
 
 h2 {
@@ -22,10 +33,10 @@ h2 {
 }
 
 .container {
-  background-color: #3e065f;
+  background-color: #2e0445;
   font-size: 20px;
   padding: 20px;
-  width: 500px;
+  width: 460px;
   max-width: 100%;
   border-radius: 10px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.45), 0 4px 8px rgba(0, 0, 0, 0.35),
