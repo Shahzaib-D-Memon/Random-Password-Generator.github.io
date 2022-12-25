@@ -9,10 +9,12 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <link rel="stylesheet" href="style.css" />
+
     <!-- License type: Free for commercial use WITH ATTRIBUTION license *
     Licensor's
     Author:
     Rawpixel.com - Freepik.com -->
+
     <link rel="icon" type="image/png" href="logo.JPG" />
     <title>Random Password Generator</title>
   </head>
@@ -32,19 +34,35 @@
         </div>
         <div class="setting">
           <label>Include Uppercase Letters</label>
-          <input type="checkbox" id="uppercase" checked />
+          <!-- <input type="checkbox" id="uppercase" checked /> -->
+
+          <!-- edit -->
+          <span class="switch">
+            <input id="uppercase" type="checkbox" checked />
+            <label for="uppercase"></label>
+          </span>
+          <!-- edit  -->
         </div>
         <div class="setting">
           <label>Include Lowercase Letters</label>
-          <input type="checkbox" id="lowercase" checked />
+          <span class="switch">
+            <input id="lowercase" type="checkbox" checked />
+            <label for="lowercase"></label>
+          </span>
         </div>
         <div class="setting">
           <label>Include Numbers</label>
-          <input type="checkbox" id="numbers" checked />
+          <span class="switch">
+            <input id="numbers" type="checkbox" checked />
+            <label for="numbers"></label>
+          </span>
         </div>
         <div class="setting">
           <label>Include Symbols</label>
-          <input type="checkbox" id="symbols" checked />
+          <span class="switch">
+            <input id="symbols" type="checkbox" checked />
+            <label for="symbols"></label>
+          </span>
         </div>
       </div>
       <button class="btn btn-large" id="generate">Generate Password</button>
