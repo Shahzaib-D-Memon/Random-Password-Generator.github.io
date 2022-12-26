@@ -101,4 +101,47 @@ h2 {
   border-radius: 8px;
   padding: 15px 30px;
 }
+
+/* switches */
+.switch {
+  display: inline-block;
+}
+
+.switch input {
+  display: none;
+}
+
+.switch label {
+  display: block;
+  width: 60px;
+  height: 30px;
+  padding: 3px;
+  border-radius: 15px;
+  border: 2px solid #f6f6f6;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.switch label::after {
+  content: "";
+  display: inherit;
+  width: 20px;
+  height: 20px;
+  border-radius: 12px;
+  background: #f6f6f6;
+  transition: 0.3s;
+}
+
+.switch input:checked ~ label {
+  border-color: #d941ff;
+}
+
+.switch input:checked ~ label::after {
+  translate: 30px 0;
+  background: #d941ff;
+}
+#length {
+  border-radius: 6px;
+}
+
 /* Created by: Shahzaib Memon */
