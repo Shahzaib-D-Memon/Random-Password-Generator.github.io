@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Muli& display=swap");
 * {
-  box-sizing: border;
+  box-sizing: border-box;
 }
 @keyframes background {
   100% {
