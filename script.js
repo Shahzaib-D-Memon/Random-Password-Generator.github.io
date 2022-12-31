@@ -40,7 +40,7 @@ generateEl.addEventListener("click", () => {
     hasUpper,
     hasNumber,
     hasSymbol,
-    length
+    
   );
 });
 
